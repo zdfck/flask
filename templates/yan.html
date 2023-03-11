@@ -1,0 +1,120 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="api">
+    <meta name="keywords" content="api">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#fd4b5c">
+    <title>随机一言 - API</title>
+</head>
+<style type="text/css">
+    h3:hover {
+        box-shadow: 0 0 8px #D1D1D1;
+    }
+        /* reset */
+    table {
+        border-collapse: collapse;
+        border-spacing: 0;
+        border:1px;
+        height:140px;
+        width:600px;
+    }
+    .m-tb th {
+        background-color: #FFFFFF;
+        border: 1px solid #a9c6c9;
+        padding: 8px;
+    }
+    .m-tb td {
+        background-color: #FFFFFF;
+        border: 1px solid #a9c6c9;
+        padding: 8px;
+    }
+</style>
+<div style="box-shadow: 5px 5px 25px 0 rgba(46,61,73,.2);border-radius:15px;font-size:13px;width:950px;font-family:微软雅黑,'Helvetica Neue',Arial,sans-serif;margin:10px auto 0px;border:0px solid #eee;max-width:100%;">
+    <div style="width:100%;background-color: #3174ed;background-image: linear-gradient(90deg, #3174ed 0%, #FA8BFF 35%, #3fd9fb 88%);color:#FFFFFF;border-radius:15px 15px 0 0;">
+        <h2 style="font-size:15px;word-break:break-all;padding:20px 32px;margin:0;text-align:center">随机一言 - API</h2>
+    </div>
+    <div style="margin:0 auto;width:90%">
+        <h3 style="-webkit-transition: all .2s cubic-bezier(0, 0, 0, 0.48);-moz-transition: all .2s ease;border:.0625rem solid #fafafa;background:#fafafa repeating-linear-gradient(-45deg,#fff,#fff 1.125rem,transparent 1.125rem,transparent 2.25rem);margin:15px 0px;padding:20px;border-radius:5px;font-size:14px;color:#333;">
+            # 请求方式 #
+            <ul>
+                Method: Get
+            </ul>
+            <hr>
+            # 请求地址 #<br/>
+            <ul><a style="color:#fd4b5c;text-decoration:none;">http://127.0.0.1:5000/api/yan</a><br/></ul>
+            <hr>
+            # 请求参数 #<br/>
+            <ul>
+                <table class="m-tb">
+                    <tr>
+                        <td>参数</td>
+                        <td>内容</td>
+                        <td>用途</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>0 全部类型 | i 诗词 | y 网易云 | f 来自网络</td>
+                        <td>一言类型 如果为空默认 0 全部类型</td>
+                    </tr>
+                    <tr>
+                        <td>charset</td>
+                        <td>gbk/utf-8</td>
+                        <td>字符编码，默认utf-8</td>
+                    </tr>
+                    <tr>
+                        <td>encode</td>
+                        <td>text/js/json</td>
+                        <td>返回方式 如果为空默认 json 返回</td>
+                    </tr>
+                </table>
+            </ul>
+            <hr>
+            # 返回参数 #<br/>
+            <ul>
+                <table class="m-tb">
+                    <tr>
+                        <td>参数</td>
+                        <td>内容</td>
+                    </tr>
+                    <tr>
+                        <td>id</td>
+                        <td>一言ID</td>
+                    </tr>
+                    <tr>
+                        <td>yan</td>
+                        <td>一言内容</td>
+                    </tr>
+                    <tr>
+                        <td>from_who</td>
+                        <td>作者</td>
+                    </tr>
+                    <tr>
+                        <td>come_from</td>
+                        <td>出处</td>
+                    </tr>
+                    <tr>
+                        <td>type</td>
+                        <td>一言类型 i 诗词 | y 网易云 | f 来自网络</td>
+                    </tr>
+                    <tr>
+                        <td>length</td>
+                        <td>一言长度</td>
+                    </tr>
+                </table>
+            </ul>
+            <hr>
+            # 使用方法 #<br/>
+            <ul>
+                返回文字: &nbsp;&nbsp;&nbsp;<a style="color:#fd4b5c;text-decoration:none;">http://127.0.0.1:5000/api/yan?charset=utf-8</a><br>
+                返回诗词: &nbsp;&nbsp;&nbsp;<a style="color:#fd4b5c;text-decoration:none;">http://127.0.0.1:5000/api/yan?type=i</a><br>
+                js调用举例: <a style="color:#fd4b5c;text-decoration:none;">&lt;script
+                src="http://127.0.0.1:5000/api/yan?encode=js">&lt;/script></a><br/>
+                js输出举例: <a style="color:#fd4b5c;text-decoration:none;">&lt;div id="yan">&lt;script>yan()&lt;/script>&lt;/div></a><br/>
+            </ul>
+        </h3>
+    </div>
+</div>
+</html>

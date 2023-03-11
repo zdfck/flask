@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>一些简单API</title>
+    <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon"/>
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" id="css-main" href="{{ url_for('static',filename='css/oneui.css') }}">
+
+</head>
+<body>
+<!-- Live Previews -->
+<div style="border-radius:5px">
+    <section class="content content-boxed">
+        <!-- Section Content -->
+        <div class="row">
+            <div class="col-sm-4">
+                <a class="block block-link-hover2 ribbon ribbon-modern ribbon-success" href="/yan">
+                    <div class="ribbon-box font-w600">调用:{{ remark_cont }}<?php echo $counter10; ?></div>
+                    <div class="block-content">
+                        <div class="h4 push-5">随机一言</div>
+                        <p class="text-muted">每天定时送上一杯毒鸡汤</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="block block-link-hover2 ribbon ribbon-modern ribbon-success" href="pic">
+                    <div class="ribbon-box font-w600">调用:{{ pic_cont }}</div>
+                    <div class="block-content">
+                        <div class="h4 push-5">随机壁纸</div>
+                        <p class="text-muted">随机壁纸</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-4">
+                <a class="block block-link-hover2 ribbon ribbon-modern ribbon-success" href="#">
+                    <div class="ribbon-box font-w600">调用:0</div>
+                    <div class="block-content">
+                        <div class="h4 push-5">待更新</div>
+                        <p class="text-muted">努力更新中！！！！！！</p>
+                    </div>
+                </a>
+            </div>
+            <div class="col-sm-12">
+                <a class="block block-link-hover2 ribbon ribbon-modern ribbon-success">
+                    <div class="block-content">
+                        <p class="text-center">本网站只提供接口服务，造成的一切后果与本网站无关!</p>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+</div>
+<!-- font-awesome 4.2.0 -->
+<link href="http://lib.baomitu.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<!-- JQuery 2.2.4 -->
+<script src="http://lib.baomitu.com/jquery/2.2.4/jquery.min.js"></script>
+<!-- JQuery-mousewheel 3.1.9 -->
+<script src="http://lib.baomitu.com/jquery-mousewheel/3.1.9/jquery.mousewheel.min.js"></script>
+</body>
+</html>

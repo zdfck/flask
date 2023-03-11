@@ -16,7 +16,8 @@ def index():
 
 @app.route('/yan/')
 def yan():
-    return render_template("yan.html")
+    host_name = request.host_url
+    return render_template("yan.html", host_name=host_name)
 
 
 @app.route('/api/yan/')
@@ -43,7 +44,8 @@ def yan_api():
 
 @app.route('/pic/')
 def pic():
-    return render_template("pic.html")
+    host_name = request.host_url
+    return render_template("pic.html", host_name=host_name)
 
 
 @app.route('/api/pic/')
